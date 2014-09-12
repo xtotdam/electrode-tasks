@@ -1,0 +1,134 @@
+\input{header.tex}
+
+\newcommand{\num}[1]{\line(1,0){500}\\\textbf{#1}\\}
+
+\begin{document}
+Электродинамика - задачи\\
+
+\num{3.2}
+$\triangle \varphi = -4\pi \rho$\\
+$\triangle f(\vec{r}) = \dfrac1{r^2} \pd{}{r} (r^2 \pd{}{r}f(\vec{r})) $\\
+$\triangle \dfrac{A}{r} = A \delta(r) $\\
+
+\num{4.1,\,4.4}
+$\varphi_0 = \dfrac{Q}{r};\; \varphi_1 = \dfrac{\scmult{d}{r}}{r^3};\;\varphi_2 = \sum\limits_{\alpha\beta}^3 \dfrac{D_{\alpha\beta}x^\alpha x^\beta}{2r^5}$\\
+$Q = \int dV' \rho(\vec{r'});\;\vec{d}=\int dV' \vec{r'}\rho(\vec{r'});\; D_{\alpha\beta} = \int dV' \{3x^\alpha x^\beta - r'^2 \delta_{\alpha\beta}\}\rho(\vec{r'})  $\\
+
+\num{4.3}
+$\rho(\vec{r'}) =
+\begin{cases}
+    \sigma_S\delta(z'), & \vec{r'} \le R \\
+    0, & \text{else}
+\end{cases}$\\
+
+\num{4.5}
+$\rho(\vec{r'}) = \dfrac{q}{2\pi}\delta{z'}\left(\dfrac{\delta(r'-a)}{a}-\dfrac{\delta(r'-b)}{b} \right)$\\
+
+\num{5.2}
+$\varepsilon_{int} = q_1 \varphi_2(\vec{r_1}) - \scmult{d_1}{E_2(\vec{r_1})};\;q_1 = 0;\; \vec{E} = \dfrac{3\scmult{p}{r}\vec{r}-\vec{p}r^2}{r^5}$\\
+$\vec{F_{int}} = -\vec{\nabla}\varepsilon_{int}$\\
+
+\num{5.4}
+$\vec{A} = \vec{A_1} = \dfrac{\vmult{m}{r}}{r^3};\;\vec{m} = \dfrac1{2c}\int dV' \vmult{r'}{j(\vec{r'})} $\\
+$ \vec{j(\vec{r'})} = \rho(\vec{r'}) \cdot \vec{v(\vec{r'})};\; \rho(\vec{r'}) = \dfrac{q}{V} = \begin{cases}\dfrac{3q}{4\pi R^3} & r'\le R \\ 0 & else \end{cases};\; v(\vec{r'}) = \vmult{\omega}{r'}$\\
+$\vec{H} = \dfrac{3\scmult{m}{r}\vec{r}-\vec{m}r^2}{r^5}$\\
+
+\num{7.2}
+$r'(t) = R(\cos \omega t \vec{e_x} + \sin \omega t \vec{e_y})$\\
+$\d{I}{\Omega}=\dfrac{\vmult{\ddot{d}}{n}}{4\pi c^3};\; I = \dfrac{2\ddot{\vec{d}}^2(\tau)}{3c^3};\; \vec{d} = \vec{d(\tau)}! $\\
+
+\num{7.3}
+$\d{I}{\Omega}=\dfrac{\vmult{\ddot{m}}{n}}{4\pi c^3};\; I = \dfrac{2\ddot{\vec{m}}^2(\tau)}{3c^3}$\\
+$\vec{m} = \dfrac{JS\vec{N}}{c} = \dfrac{J\pi a^2}{c}\vec{N};\; \vec{N} = \{\cos\omega\tau \sin\alpha,\,\sin\omega\tau\sin\alpha,\,\cos\alpha \}$\\
+
+\num{7.5}
+$\rho(\vec{r'},\tau) = A \delta(z')\delta(r'-R)\left(\delta(\varphi'-\omega\tau)+\delta(\varphi'-\omega\tau-\pi) \right);\; A = \dfrac{q}{R}$\\
+$I = \sum\limits_{\alpha\beta}^3 \dfrac{\dddot{D}_{\alpha\beta} \dddot{D}_{\alpha\beta}}{180c^5};\;\vec{H}=\dfrac{\vmult{\dddot{D}}{n}}{6c^3 r} $\\
+
+\num{7.7}
+$\rho = q \delta(x) \delta(y) \left( \delta(z-l-a\cos{\omega t}) - \delta(z+l-a\cos{\omega t})) \right)$\\
+$\vec{d} = 0;\; \vec{m} = 0;\; \Omega \Leftarrow D(\omega);\; D_{11}=D_{22}=-\dfrac1{2}D_{33};\;D_{12}=D_{23}=D_{31}=0$\\
+$I = \sum\limits_{\alpha\beta}^3 \dfrac{\dddot{D}_{\alpha\beta} \dddot{D}_{\alpha\beta}}{180c^5};\; \varepsilon_T = \int\limits_0^T I dt;\; \int\limits_0^T \sin^2 \omega t dt = \dfrac{1}{2}$\\
+
+\num{8.2}
+$\triangle \varepsilon = \int\limits_{-\infty}^\infty I(t)dt;\; I(t) = \dfrac{2\ddot{\vec{d(t)}}}{3c^3}; \vec{d}=e\vec{r};\;m\ddot{\vec{r}}=\dfrac{eQ\vec{r}}{r^3};\;r^2(t)=v_0^2 t^2 + a^2$\\
+$\int\limits_{-\infty}^\infty \dfrac{d\xi}{(\xi^2+a^2)^2} = \dfrac{\pi}{a}$\\
+
+\num{8.3}
+
+\num{11.6}
+
+
+
+\num{11.8}
+$x^\alpha = \Lambda^\alpha_\beta {x'}^\beta ;\; \Lambda^\alpha_\beta =
+\begin{pmatrix}\gamma & \beta\gamma & 0 & 0 \\ \beta\gamma & \gamma & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix};\;\gamma = \dfrac1{\sqrt{1-\beta^2}};\;\beta=\dfrac{v}{c};\;g_{ik}=(\,+\,-\,-\,-\,)$\\
+$A^i = \{\varphi, \vec{A} \};\; \vec{A}'=0\; (v_q\, in\, K' = 0) $\\
+
+\num{13.3}
+$\begin{cases}
+    \vec{E_\|}'=\vec{E_\|} & \vec{E_\perp}' = \gamma(\vec{E_\perp}+\dfrac1{c}\vmult{V}{H} ) \\
+    \vec{H_\|}'=\vec{H_\|} & \vec{H_\perp}' = \gamma(\vec{H_\perp}-\dfrac1{c}\vmult{V}{E} )
+\end{cases}$\\
+$\vmult{E'}{H'}=0$\\
+
+\num{14.3}
+
+\num{14.4}
+$\begin{cases}
+    \varepsilon_f^0 + mc^2 = \varepsilon_f + \varepsilon_e \\
+    \vec{p}_f^0 = \vec{p}_e + \vec{p}_f
+\end{cases};\;
+\begin{cases}
+    \dfrac{{\varepsilon_f^0}^2}{c^2}-{p^0_f}^2 = 0 \\
+    \dfrac{{\varepsilon_e}^2}{c^2}-{p_e}^2 = m^2 c^2
+\end{cases};\;
+\begin{cases}
+    \varepsilon^0_f = \hbar\omega_0 \\
+    \varepsilon_f = \hbar\omega \\
+\end{cases}\;\Rightarrow\; \omega = \dfrac{\omega_0}{1+\dfrac{\hbar\omega_0}{mc^2}(1-\cos\theta)}$
+
+\num{14.6}
+
+\num{14.8}
+
+\num{16.1}
+
+\num{16.2}
+
+
+\num{19.1}
+
+\num{19.4}
+
+\num{19.5}
+
+\num{21.2}
+
+\num{21.3}
+
+\num{22.2}
+
+\num{22.3}
+
+\num{24.4}
+
+\num{24.5}
+
+
+\num{26.2}
+
+\num{26.3}
+
+\num{26.5}
+
+\num{27.1}
+
+\num{27.3}
+
+\num{28.1}
+
+\num{30.1}
+
+
+\end{document}
